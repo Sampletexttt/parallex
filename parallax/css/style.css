@@ -1,0 +1,75 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    position: sticky;
+    transition: top .5s ease-out;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #aaa;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+}
+nav a:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+section {
+    min-height: 80vh;
+    padding: 3em;
+    transition: all 1s linear;
+}
+.deel {
+    padding: 30vh 3em;
+    background-color: aliceblue;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 3em;
+    color: rgba(255,255,255,0.7);
+    text-shadow: 0 0 3px grey;
+    overflow-x: hidden;
+}
+
+.deel-2 {
+    background-image: url("http://26135.hosts2.ma-cloud.nl/school/bewijzenmap/periode2.1/FRO/parallex/parallax/top.jpg");
+}
+
+.deel-4 {
+    background-image: url("http://26135.hosts2.ma-cloud.nl/school/bewijzenmap/periode2.1/FRO/parallex/parallax/mid.jpg");
+}
+
+.deel-6 {
+    background-image: url("http://26135.hosts2.ma-cloud.nl/school/bewijzenmap/periode2.1/FRO/parallex/parallax/bottom.jpg");
+}
+
+.accent {
+    color: dodgerblue;
+    background-color: orange;
+}
+
+#voortgang {
+    position: fixed;
+    bottom: 0;
+    height: 5px;
+    background-color: dodgerblue;
+}
